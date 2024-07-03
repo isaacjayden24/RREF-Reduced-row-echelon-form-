@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="@drawable/background_gradient"
+tools:context=".HomeFragment"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MATRIX OPERATION"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"/>
+
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose dimension of a matrix"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextRows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="rows"
+            android:inputType="number"
+            android:layout_marginEnd="4dp"
+            android:width="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textSize="18sp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+
+        <EditText
+            android:id="@+id/editTextCols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="cols"
+            android:inputType="number"
+            android:width="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/buttonCreateMatrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Matrix"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/buttonResetMatrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Matrix"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutMatrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="16dp">
+
+        <!-- Sample row, more rows should be added programmatically -->
+        <TableRow>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonRrefCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RREF Calculator"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/resultText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="16sp"
+    android:layout_marginTop="24dp"
+    android:padding="16dp"
+    android:background="@android:color/darker_gray"
+    android:textColor="@android:color/white" />
+
+
+
+
+
+
+
+
+</LinearLayout>
+
