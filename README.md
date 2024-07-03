@@ -3,9 +3,9 @@ This is a simple Android application that can be used to find the RREF(Reduced R
 of a matrix.
 
 ## screenshot
-<img src="Docs/screenshots/first.png" width="300px">
+<img src="Docs/screenshots/first.jpg" width="300px">
 
-<img src="Docs/screenshots/second.png" width="300px">
+<img src="Docs/screenshots/second.jpg" width="300px">
 
 ## RREF(BACKGROUND)
 The Reduced Row Echelon Form (RREF) of a matrix is a simplified version of the matrix where:
